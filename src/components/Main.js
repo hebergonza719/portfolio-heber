@@ -4,39 +4,32 @@ import gallery from '../images/gallery.gif';
 import todoos from '../images/todoos.gif';
 import trackit from '../images/track-it.gif';
 import gitstats from '../images/gitstats.gif';
+import ContactForm from './ContactForm';
+import cssLogo from '../images/Icons/css.svg';
+import expressLogo from '../images/Icons/express.svg';
+import htmlLogo from '../images/Icons/html.svg';
+import jsLogo from '../images/Icons/javascript.svg';
+import mongoLogo from '../images/Icons/mongodb.svg';
+import nodeLogo from '../images/Icons/node-js.svg';
+import pgLogo from '../images/Icons/postgresql.svg';
+import reactLogo from '../images/Icons/react.svg'; 
+import Navbar from './Navbar';
 
 const Main = () => {
+  const ColoredLine = ({ color }) => (
+    <hr
+      style={{
+        color: color,
+        backgroundColor: color,
+        height: 1,
+        margin: "1em 0 2em 0"
+      }}
+    />
+  );
   return (
     <div id="page-wrapper">
       {/* Header */}
-      <header id="header" className="alt">
-          <h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
-          <nav id="nav">
-            <ul>
-              <li className="current"><a href="index.html">Welcome</a></li>
-              <li className="submenu">
-                <a href="/">Layouts</a>
-                <ul>
-                  <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                  <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                  <li><a href="no-sidebar.html">No Sidebar</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li className="submenu">
-                    <a href="/">Submenu</a>
-                    <ul>
-                      <li><a href="/">Dolore Sed</a></li>
-                      <li><a href="/">Consequat</a></li>
-                      <li><a href="/">Lorem Magna</a></li>
-                      <li><a href="/">Sed Magna</a></li>
-                      <li><a href="/">Ipsum Nisl</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="/" className="button primary">Sign Up</a></li>
-            </ul>
-          </nav>
-        </header>
+      <Navbar />
       {/* Banner */}
       <section id="banner">
         {/*
@@ -47,148 +40,206 @@ const Main = () => {
 					*/}
         <div className="inner">
           <header>
-            <h2>TWENTY</h2>
+            <h2>Heber Gonzalez</h2>
           </header>
-          <p>This is <strong>Twenty</strong>, a free
-            <br />
-            responsive template
-            <br />
-            by <a href="http://html5up.net">HTML5 UP</a>.</p>
+
           <footer>
-            <ul className="buttons stacked">
-              <li><a href="#main" className="button fit scrolly">Tell Me More</a></li>
-            </ul>
+            <h4>Full Stack Web Developer</h4>
           </footer>
         </div>
       </section>
       {/* Main */}
       <article id="main">
         <header className="special container">
-          <span className="icon solid fa-chart-bar" />
-          <h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
-            <br />
-            I decided to give it a really creative name.</h2>
-          <p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
-            <br />
-            it's minimally designed, fully responsive, built on HTML5/CSS3,
-            and, like all my stuff,
-            <br />
-            released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+          <span className="icon solid fas fa-code" />
+          <h2>I am <strong>Full Stack Web Developer</strong></h2>
+          <h2>located in the New York City area</h2>
+          <p>I have a <strong>passion</strong> for learning new programming languages and expanding my tech stack.</p>
+          <p>I believe there is always room for improving my skills as a developer.</p>
         </header>
         {/* One */}
         <section className="wrapper style2 container special-alt">
           <div className="row gtr-50">
-            <div className="col-8 col-12-narrower">
+            <div className="col-12 col-12-narrower">
               <header>
-                <h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+                <h2><strong>Skills &amp; Tech Stack</strong></h2>
               </header>
-              <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-              <footer>
-                <ul className="buttons">
-                  <li><a href="/" className="button">Find Out More</a></li>
-                </ul>
-              </footer>
-            </div>
-            <div className="col-4 col-12-narrower imp-narrower">
-              <ul className="featured-icons">
-                <li><span className="icon fa-clock"><span className="label">Feature 1</span></span></li>
-                <li><span className="icon solid fa-volume-up"><span className="label">Feature 2</span></span></li>
-                <li><span className="icon solid fa-laptop"><span className="label">Feature 3</span></span></li>
-                <li><span className="icon solid fa-inbox"><span className="label">Feature 4</span></span></li>
-                <li><span className="icon solid fa-lock"><span className="label">Feature 5</span></span></li>
-                <li><span className="icon solid fa-cog"><span className="label">Feature 6</span></span></li>
-              </ul>
+              <p className='section1-p'>On the <strong>front-end</strong> side, I'm strong with HTML, CSS, Bootstrap and ReactJS.</p>
+              <p className='section1-p'>As for the <strong>back-end</strong>, I am proficient Express, Sequelize, Knex, MongoDb and PostgreSQL.</p>
+              <p className='section1-p'>I also have experience with Python, Trello, GitHub, and deployment with Netlify and Heroku.</p>
             </div>
           </div>
         </section>
         {/* Two */}
         <section className="wrapper style1 container special">
-          <div className="row">
-            <div className="col-4 col-12-narrower">
+          <div className="row logo-row">
+            <div className="col-3 col-6-narrower">
               <section>
-                <span className="icon solid featured fa-check" />
+                <img className="img-logo" src={htmlLogo} alt="html logo"/>
                 <header>
-                  <h3>This is Something</h3>
+                  <h3>HTML</h3>
                 </header>
-                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
               </section>
             </div>
-            <div className="col-4 col-12-narrower">
+            <div className="col-3 col-6-narrower">
               <section>
-                <span className="icon solid featured fa-check" />
+                <img className="img-logo" src={cssLogo} alt="css logo"/>
                 <header>
-                  <h3>Also Something</h3>
+                  <h3>CSS</h3>
                 </header>
-                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
               </section>
             </div>
-            <div className="col-4 col-12-narrower">
+            <div className="col-3 col-6-narrower">
               <section>
-                <span className="icon solid featured fa-check" />
+                <img className="img-logo" src={jsLogo} alt="javascript logo"/>
                 <header>
-                  <h3>Probably Something</h3>
+                  <h3>JavaScript</h3>
                 </header>
-                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+              </section>
+            </div>
+            <div className="col-3 col-6-narrower">
+              <section>
+                <img className="img-logo" src={reactLogo} alt="react js logo"/>
+                <header>
+                  <h3>ReactJS</h3>
+                </header>
               </section>
             </div>
           </div>
+          {/* Row 2 */}
+          <div className="row">
+            <div className="col-3 col-6-narrower">
+              <section>
+                <img className="img-logo" src={expressLogo} alt="express js logo"/>
+                <header>
+                  <h3>Express</h3>
+                </header>
+              </section>
+            </div>
+            <div className="col-3 col-6-narrower">
+              <section>
+                <img className="img-logo" src={nodeLogo} alt="node js logo"/>
+                <header>
+                  <h3>Node.js</h3>
+                </header>
+              </section>
+            </div>
+            <div className="col-3 col-6-narrower">
+              <section>
+                <img className="img-logo" src={pgLogo} alt="postgresql logo"/>
+                <header>
+                  <h3>PostgreSQL</h3>
+                </header>
+              </section>
+            </div>
+            <div className="col-3 col-6-narrower">
+              <section>
+                <img className="img-logo" src={mongoLogo} alt="mongodb logo"/>
+                <header>
+                  <h3>MongoDb</h3>
+                </header>
+              </section>
+            </div>
+          </div>
+          {/* Row 3 */}
         </section>
         {/* Three */}
         <section className="wrapper style3 container special">
           <header className="major">
-            <h2>My Projects</h2>
+            <h2 className="section-title">My Projects</h2>
           </header>
           <div className="row">
             <div className="col-6 col-12-narrower">
-              <section>
-                <a href="/" className="image featured"><img src={conways} alt="" /></a>
+              <section className="app-section">
+                <a href="https://game-of-life-conways.netlify.app" className="image featured"><img src={conways} alt="Conway's game of life app" /></a>
                 <header>
                   <h3>Conway's Game of Life</h3>
                 </header>
-                <p>A web app demonstrating a cellular automaton in the form of Conway’s “Game of Life.”</p>
+                <p className="app-description">A web app demonstrating a cellular automaton in the form of Conway’s “Game of Life.”</p>
+                <div className="row">
+                  <div className="col-3 col-0-narrower"></div>
+                  <div className="col-6 col-12-narrower button-container">
+                    <a href="https://game-of-life-conways.netlify.app">Site</a>
+                    <a href="https://github.com/hebergonza719/CS-Build-Week-One/tree/main/game-of-life">GitHub</a>
+                  </div>
+                  <div className="col-3 col-0-narrower"></div>
+                </div>
               </section>
             </div>
             <div className="col-6 col-12-narrower">
-              <section>
-                <a href="/" className="image featured"><img src={gallery} alt="" /></a>
+              <section className="app-section">
+                <a href="https://photo-gallery-front-end.netlify.app/" className="image featured"><img src={gallery} alt="Gallery App" /></a>
                 <header>
                   <h3>Photo Gallery</h3>
                 </header>
-                <p>A web app where users can upload images and view them in a gallery.</p>
+                <p className="app-description">A web app where users can upload images and view them in a gallery.</p>
+                <div className="row">
+                  <div className="col-3 col-0-narrower"></div>
+                  <div className="col-6 col-12-narrower button-container">
+                    <a href="https://photo-gallery-front-end.netlify.app/">Site</a>
+                    <a href="https://github.com/hebergonza719/photo-gallery">GitHub</a>
+                  </div>
+                  <div className="col-3 col-0-narrower"></div>
+                </div>
               </section>
             </div>
           </div>
+          <ColoredLine color="#dee2e6"/>
           <div className="row">
             <div className="col-6 col-12-narrower">
-              <section>
-                <a href="/" className="image featured"><img src={todoos} alt="" /></a>
+              <section className="app-section">
+                <a href="https://to-doos-app.herokuapp.com" className="image featured"><img src={todoos} alt="ToDoos App" /></a>
                 <header>
                   <h3>ToDoos</h3>
                 </header>
-                <p>A web app that allows users to create a to-do list that could be accessed anywhere.</p>
+                <p className="app-description">A web app that allows users to create a to-do list that could be accessed anywhere.</p>
+                <div className="row">
+                  <div className="col-3 col-0-narrower"></div>
+                  <div className="col-6 col-12-narrower button-container">
+                    <a href="https://to-doos-app.herokuapp.com">Site</a>
+                    <a href="https://github.com/hebergonza719/to-do-list">GitHub</a>
+                  </div>
+                  <div className="col-3 col-0-narrower"></div>
+                </div>
               </section>
             </div>
             <div className="col-6 col-12-narrower">
-              <section>
-                <a href="/" className="image featured"><img src={trackit} alt="" /></a>
+              <section className="app-section">
+                <a href="https://track-it-exercise-app.herokuapp.com/" className="image featured"><img src={trackit} alt="" /></a>
                 <header>
                   <h3>Track It</h3>
                 </header>
-                <p>A web app that allows users to track their exercise routines and view previous exercise logs.</p>
+                <p className="app-description">A web app that allows users to track their exercise routines and view previous exercise logs.</p>
+                <div className="row">
+                  <div className="col-3 col-0-narrower"></div>
+                  <div className="col-6 col-12-narrower button-container">
+                    <a href="https://track-it-exercise-app.herokuapp.com/">Site</a>
+                    <a href="https://github.com/hebergonza719/exercise_tracker">GitHub</a>
+                  </div>
+                  <div className="col-3 col-0-narrower"></div>
+                </div>
               </section>
             </div>
           </div>
+          <ColoredLine color="#dee2e6"/>
           <div className="row">
             <div className="col-3 col-0-narrower">
-
             </div>
             <div className="col-6 col-12-narrower">
               <section>
-                <a href="/" className="image featured"><img src={gitstats} alt="" /></a>
+                <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-fe" className="image featured"><img src={gitstats} alt="" /></a>
                 <header>
                   <h3>GitStats</h3>
                 </header>
-                <p>A web app designed to provide GitHub users with useful statistics regarding each of their repositories.</p>
+                <p className="app-description">A web app designed to provide GitHub users with useful statistics regarding each of their repositories.</p>
+                <div className="row">
+                  <div className="col-2 col-0-narrower"></div>
+                  <div className="col-8 col-12-narrower button-container">
+                    <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-fe">GitHub Front-end</a>
+                    <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-be">GitHub Back-end</a>
+                  </div>
+                  <div className="col-2 col-0-narrower"></div>
+                </div>
               </section>
             </div>
             <div className="col-3 col-0-narrower">
@@ -196,6 +247,7 @@ const Main = () => {
             </div>
           </div>
         </section>
+        <ContactForm />
       </article>
       {/* Footer */}
       <footer id="footer">
@@ -205,6 +257,7 @@ const Main = () => {
         </ul>
         <ul className="copyright">
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>Photo by Florian Olivo on Unsplash</li>
         </ul>
       </footer>
     </div>
