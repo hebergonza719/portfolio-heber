@@ -1,9 +1,9 @@
 import React from 'react';
-import conways from '../images/conways.gif';
-import gallery from '../images/gallery.gif';
-import todoos from '../images/todoos.gif';
-import trackit from '../images/track-it.gif';
-import gitstats from '../images/gitstats.gif';
+// import conways from '../images/conways.gif';
+// import gallery from '../images/gallery.gif';
+// import todoos from '../images/todoos.gif';
+// import trackit from '../images/track-it.gif';
+// import gitstats from '../images/gitstats.gif';
 import ContactForm from './ContactForm';
 import cssLogo from '../images/Icons/css.svg';
 import expressLogo from '../images/Icons/express.svg';
@@ -14,6 +14,7 @@ import nodeLogo from '../images/Icons/node-js.svg';
 import pgLogo from '../images/Icons/postgresql.svg';
 import reactLogo from '../images/Icons/react.svg'; 
 import Navbar from './Navbar';
+import AnimatedImage from "../components/AnimatedImage";
 
 const Main = () => {
   const ColoredLine = ({ color }) => (
@@ -32,12 +33,6 @@ const Main = () => {
       <Navbar />
       {/* Banner */}
       <section id="banner">
-        {/*
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					*/}
         <div className="inner">
           <header>
             <h2>Heber Gonzalez</h2>
@@ -65,7 +60,7 @@ const Main = () => {
                 <h2><strong>Skills &amp; Tech Stack</strong></h2>
               </header>
               <p className='section1-p'>On the <strong>front-end</strong> side, I'm strong with HTML, CSS, Bootstrap and ReactJS.</p>
-              <p className='section1-p'>As for the <strong>back-end</strong>, I am proficient Express, Sequelize, Knex, MongoDb and PostgreSQL.</p>
+              <p className='section1-p'>As for the <strong>back-end</strong>, I am proficient with Express.js, Sequelize, Knex, MongoDb and PostgreSQL.</p>
               <p className='section1-p'>I also have experience with Python, Trello, GitHub, and deployment with Netlify and Heroku.</p>
             </div>
           </div>
@@ -75,7 +70,7 @@ const Main = () => {
           <div className="row logo-row">
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={htmlLogo} alt="html logo"/>
+                <AnimatedImage source={htmlLogo} altText="html logo" />
                 <header>
                   <h3>HTML</h3>
                 </header>
@@ -83,7 +78,7 @@ const Main = () => {
             </div>
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={cssLogo} alt="css logo"/>
+                <AnimatedImage source={cssLogo} altText="css logo" />
                 <header>
                   <h3>CSS</h3>
                 </header>
@@ -91,7 +86,7 @@ const Main = () => {
             </div>
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={jsLogo} alt="javascript logo"/>
+                <AnimatedImage source={jsLogo} altText="javascript logo" />
                 <header>
                   <h3>JavaScript</h3>
                 </header>
@@ -99,7 +94,7 @@ const Main = () => {
             </div>
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={reactLogo} alt="react js logo"/>
+                <AnimatedImage source={reactLogo} altText="react js logo" />
                 <header>
                   <h3>ReactJS</h3>
                 </header>
@@ -110,7 +105,7 @@ const Main = () => {
           <div className="row">
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={expressLogo} alt="express js logo"/>
+                <AnimatedImage source={expressLogo} altText="express js logo" />
                 <header>
                   <h3>Express</h3>
                 </header>
@@ -118,7 +113,7 @@ const Main = () => {
             </div>
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={nodeLogo} alt="node js logo"/>
+                <AnimatedImage source={nodeLogo} altText="node js logo" />
                 <header>
                   <h3>Node.js</h3>
                 </header>
@@ -126,7 +121,7 @@ const Main = () => {
             </div>
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={pgLogo} alt="postgresql logo"/>
+                <AnimatedImage source={pgLogo} altText="postgresql logo" />
                 <header>
                   <h3>PostgreSQL</h3>
                 </header>
@@ -134,7 +129,7 @@ const Main = () => {
             </div>
             <div className="col-3 col-6-narrower">
               <section>
-                <img className="img-logo" src={mongoLogo} alt="mongodb logo"/>
+                <AnimatedImage source={mongoLogo} altText="mongodb logo" />
                 <header>
                   <h3>MongoDb</h3>
                 </header>
@@ -151,7 +146,7 @@ const Main = () => {
           <div className="row">
             <div className="col-6 col-12-narrower">
               <section className="app-section">
-                <a href="https://game-of-life-conways.netlify.app" className="image featured"><img src={conways} alt="Conway's game of life app" /></a>
+                {/* <a href="https://game-of-life-conways.netlify.app" className="image featured"><img src={conways} alt="Conway's game of life app" /></a> */}
                 <header>
                   <h3>Conway's Game of Life</h3>
                 </header>
@@ -168,7 +163,7 @@ const Main = () => {
             </div>
             <div className="col-6 col-12-narrower">
               <section className="app-section">
-                <a href="https://photo-gallery-front-end.netlify.app/" className="image featured"><img src={gallery} alt="Gallery App" /></a>
+                {/* <a href="https://photo-gallery-front-end.netlify.app/" className="image featured"><img src={gallery} alt="Gallery App" /></a> */}
                 <header>
                   <h3>Photo Gallery</h3>
                 </header>
@@ -188,7 +183,7 @@ const Main = () => {
           <div className="row">
             <div className="col-6 col-12-narrower">
               <section className="app-section">
-                <a href="https://to-doos-app.herokuapp.com" className="image featured"><img src={todoos} alt="ToDoos App" /></a>
+                {/* <a href="https://to-doos-app.herokuapp.com" className="image featured"><img src={todoos} alt="ToDoos App" /></a> */}
                 <header>
                   <h3>ToDoos</h3>
                 </header>
@@ -205,7 +200,7 @@ const Main = () => {
             </div>
             <div className="col-6 col-12-narrower">
               <section className="app-section">
-                <a href="https://track-it-exercise-app.herokuapp.com/" className="image featured"><img src={trackit} alt="" /></a>
+                {/* <a href="https://track-it-exercise-app.herokuapp.com/" className="image featured"><img src={trackit} alt="" /></a> */}
                 <header>
                   <h3>Track It</h3>
                 </header>
@@ -227,7 +222,7 @@ const Main = () => {
             </div>
             <div className="col-6 col-12-narrower">
               <section>
-                <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-fe" className="image featured"><img src={gitstats} alt="" /></a>
+                {/* <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-fe" className="image featured"><img src={gitstats} alt="" /></a> */}
                 <header>
                   <h3>GitStats</h3>
                 </header>
