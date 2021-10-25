@@ -47,3 +47,7 @@
     justify-content: space-evenly;
   }
 }
+
+.app-links {
+  font-weight: 500;
+}

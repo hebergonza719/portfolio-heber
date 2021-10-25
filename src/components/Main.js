@@ -157,8 +157,8 @@ const Main = () => {
                 <div className="row">
                   <div className="col-3 col-0-narrower"></div>
                   <div className="col-6 col-12-narrower button-container">
-                    <a href="https://game-of-life-conways.netlify.app">Site</a>
-                    <a href="https://github.com/hebergonza719/CS-Build-Week-One/tree/main/game-of-life">GitHub</a>
+                    <a className="app-links" href="https://game-of-life-conways.netlify.app">Site</a>
+                    <a className="app-links" href="https://github.com/hebergonza719/CS-Build-Week-One/tree/main/game-of-life">GitHub</a>
                   </div>
                   <div className="col-3 col-0-narrower"></div>
                 </div>
@@ -174,8 +174,8 @@ const Main = () => {
                 <div className="row">
                   <div className="col-3 col-0-narrower"></div>
                   <div className="col-6 col-12-narrower button-container">
-                    <a href="https://photo-gallery-front-end.netlify.app/">Site</a>
-                    <a href="https://github.com/hebergonza719/photo-gallery">GitHub</a>
+                    <a className="app-links" href="https://photo-gallery-front-end.netlify.app/">Site</a>
+                    <a className="app-links" href="https://github.com/hebergonza719/photo-gallery">GitHub</a>
                   </div>
                   <div className="col-3 col-0-narrower"></div>
                 </div>
@@ -194,8 +194,8 @@ const Main = () => {
                 <div className="row">
                   <div className="col-3 col-0-narrower"></div>
                   <div className="col-6 col-12-narrower button-container">
-                    <a href="https://to-doos-app.herokuapp.com">Site</a>
-                    <a href="https://github.com/hebergonza719/to-do-list">GitHub</a>
+                    <a className="app-links" href="https://to-doos-app.herokuapp.com">Site</a>
+                    <a className="app-links" href="https://github.com/hebergonza719/to-do-list">GitHub</a>
                   </div>
                   <div className="col-3 col-0-narrower"></div>
                 </div>
@@ -211,8 +211,8 @@ const Main = () => {
                 <div className="row">
                   <div className="col-3 col-0-narrower"></div>
                   <div className="col-6 col-12-narrower button-container">
-                    <a href="https://track-it-exercise-app.herokuapp.com/">Site</a>
-                    <a href="https://github.com/hebergonza719/exercise_tracker">GitHub</a>
+                    <a className="app-links" href="https://track-it-exercise-app.herokuapp.com/">Site</a>
+                    <a className="app-links" href="https://github.com/hebergonza719/exercise_tracker">GitHub</a>
                   </div>
                   <div className="col-3 col-0-narrower"></div>
                 </div>
@@ -231,12 +231,12 @@ const Main = () => {
                 </header>
                 <p className="app-description">A web app designed to provide GitHub users with useful statistics regarding each of their repositories.</p>
                 <div className="row">
-                  <div className="col-2 col-0-narrower"></div>
-                  <div className="col-8 col-12-narrower button-container">
-                    <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-fe">GitHub Front-end</a>
-                    <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-be">GitHub Back-end</a>
+                  <div className="col-1 col-0-narrower"></div>
+                  <div className="col-10 col-12-narrower button-container">
+                    <a className="app-links" href="https://github.com/Lambda-School-Labs/github-commit-analysis-fe">GitHub Front-end</a>
+                    <a className="app-links" href="https://github.com/Lambda-School-Labs/github-commit-analysis-be">GitHub Back-end</a>
                   </div>
-                  <div className="col-2 col-0-narrower"></div>
+                  <div className="col-1 col-0-narrower"></div>
                 </div>
               </section>
             </div>

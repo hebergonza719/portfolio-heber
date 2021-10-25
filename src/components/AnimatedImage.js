@@ -18,12 +18,12 @@ const AnimatedImage = ({ source, altText }) => {
 
   const props = useSpring({
     to: { 
-      opacity: 1,
+      // opacity: 0.5,
       rotate: 360, 
       scale: altText === "mongodb logo" ? 1.5 : 1,
      },
     from: { 
-      opacity: 0.5,
+      // opacity: 1,
       rotate: 0, 
       scale: altText === "mongodb logo" ? 1 : 0.6,
     },
