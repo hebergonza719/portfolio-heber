@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactForm from './ContactForm';
 import cssLogo from '../images/Icons/css.svg';
 import expressLogo from '../images/Icons/express.svg';
@@ -10,8 +10,16 @@ import pgLogo from '../images/Icons/postgresql.svg';
 import reactLogo from '../images/Icons/react.svg'; 
 import Navbar from './Navbar';
 import AnimatedImage from "../components/AnimatedImage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Main = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+
   const ColoredLine = ({ color }) => (
     <hr
       style={{
@@ -40,7 +48,7 @@ const Main = () => {
       </section>
       {/* Main */}
       <article id="main">
-        <header className="special container">
+        <header data-aos="fade-left" className="special container">
           <span className="icon solid fas fa-code" />
           <h2>I am <strong>Full Stack Web Developer</strong></h2>
           <h2>located in the New York City area</h2>
@@ -48,7 +56,7 @@ const Main = () => {
           <p>I believe there is always room for improving my skills as a developer.</p>
         </header>
         {/* One */}
-        <section className="wrapper style2 container special-alt">
+        <section data-aos="fade-right" className="wrapper style2 container special-alt">
           <div className="row gtr-50">
             <div className="col-12 col-12-narrower">
               <header>
@@ -61,7 +69,7 @@ const Main = () => {
           </div>
         </section>
         {/* Two */}
-        <section className="wrapper style1 container special">
+        <section data-aos="fade-left" className="wrapper style1 container special">
           <div className="row logo-row">
             <div className="col-3 col-6-narrower">
               <section>
