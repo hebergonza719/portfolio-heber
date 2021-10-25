@@ -9,26 +9,32 @@ const AnimatedImage = ({ source, altText }) => {
   //   to: { opacity: 1 },
   //   from: { opacity: 0 },
   //   // reset: true,
-  //   reverse: flip,
+  //   reverse: state,
   //   delay: 25,
   //   // config: config.molasses,
   //   config: { duration: 500 },
-  //   // onRest: () => set(!flip),
+  //   // onRest: () => set(!state),
   // })
 
   const props = useSpring({
-    transform: state ? "rotate(0deg) scale(0.6)" : "rotate(360deg) scale(1)",
+    to: { 
+      opacity: 1,
+      rotate: 360, 
+      scale: altText === "mongodb logo" ? 1.5 : 1,
+     },
+    from: { 
+      opacity: 0.5,
+      rotate: 0, 
+      scale: altText === "mongodb logo" ? 1 : 0.6,
+    },
     transformOrigin: "center",
     transformBox: "fill-box",
-    delay: 50,
-    config: {
-      friction: 19, // the default value is 26
-    },
-    opacity: state ? "0.50" : "1",
+    delay: 100,
+    // reset: true,
+    reverse: state,
+    config: { friction: 19 },
+    // onRest: () => toggle(!state),
   })
-
-
-  console.log(state)
 
   const handleMouseEnter = () => {
     toggle(!state);

@@ -1,9 +1,4 @@
 import React from 'react';
-// import conways from '../images/conways.gif';
-// import gallery from '../images/gallery.gif';
-// import todoos from '../images/todoos.gif';
-// import trackit from '../images/track-it.gif';
-// import gitstats from '../images/gitstats.gif';
 import ContactForm from './ContactForm';
 import cssLogo from '../images/Icons/css.svg';
 import expressLogo from '../images/Icons/express.svg';
@@ -72,7 +67,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={htmlLogo} altText="html logo" />
                 <header>
-                  <h3>HTML</h3>
+                  <h4>HTML</h4>
                 </header>
               </section>
             </div>
@@ -80,7 +75,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={cssLogo} altText="css logo" />
                 <header>
-                  <h3>CSS</h3>
+                  <h4>CSS</h4>
                 </header>
               </section>
             </div>
@@ -88,7 +83,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={jsLogo} altText="javascript logo" />
                 <header>
-                  <h3>JavaScript</h3>
+                  <h4>JavaScript</h4>
                 </header>
               </section>
             </div>
@@ -96,7 +91,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={reactLogo} altText="react js logo" />
                 <header>
-                  <h3>ReactJS</h3>
+                  <h4>ReactJS</h4>
                 </header>
               </section>
             </div>
@@ -107,7 +102,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={expressLogo} altText="express js logo" />
                 <header>
-                  <h3>Express</h3>
+                  <h4>Express</h4>
                 </header>
               </section>
             </div>
@@ -115,7 +110,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={nodeLogo} altText="node js logo" />
                 <header>
-                  <h3>Node.js</h3>
+                  <h4>Node.js</h4>
                 </header>
               </section>
             </div>
@@ -123,7 +118,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={pgLogo} altText="postgresql logo" />
                 <header>
-                  <h3>PostgreSQL</h3>
+                  <h4>PostgreSQL</h4>
                 </header>
               </section>
             </div>
@@ -131,7 +126,7 @@ const Main = () => {
               <section>
                 <AnimatedImage source={mongoLogo} altText="mongodb logo" />
                 <header>
-                  <h3>MongoDb</h3>
+                  <h4>MongoDb</h4>
                 </header>
               </section>
             </div>
@@ -148,7 +143,7 @@ const Main = () => {
               <section className="app-section">
                 {/* <a href="https://game-of-life-conways.netlify.app" className="image featured"><img src={conways} alt="Conway's game of life app" /></a> */}
                 <header>
-                  <h3>Conway's Game of Life</h3>
+                  <h3 className="app-title">Conway's Game of Life</h3>
                 </header>
                 <p className="app-description">A web app demonstrating a cellular automaton in the form of Conway’s “Game of Life.”</p>
                 <div className="row">
@@ -165,7 +160,7 @@ const Main = () => {
               <section className="app-section">
                 {/* <a href="https://photo-gallery-front-end.netlify.app/" className="image featured"><img src={gallery} alt="Gallery App" /></a> */}
                 <header>
-                  <h3>Photo Gallery</h3>
+                  <h3 className="app-title">Photo Gallery</h3>
                 </header>
                 <p className="app-description">A web app where users can upload images and view them in a gallery.</p>
                 <div className="row">
@@ -185,7 +180,7 @@ const Main = () => {
               <section className="app-section">
                 {/* <a href="https://to-doos-app.herokuapp.com" className="image featured"><img src={todoos} alt="ToDoos App" /></a> */}
                 <header>
-                  <h3>ToDoos</h3>
+                  <h3 className="app-title">ToDoos</h3>
                 </header>
                 <p className="app-description">A web app that allows users to create a to-do list that could be accessed anywhere.</p>
                 <div className="row">
@@ -202,7 +197,7 @@ const Main = () => {
               <section className="app-section">
                 {/* <a href="https://track-it-exercise-app.herokuapp.com/" className="image featured"><img src={trackit} alt="" /></a> */}
                 <header>
-                  <h3>Track It</h3>
+                  <h3 className="app-title">Track It</h3>
                 </header>
                 <p className="app-description">A web app that allows users to track their exercise routines and view previous exercise logs.</p>
                 <div className="row">
@@ -224,7 +219,7 @@ const Main = () => {
               <section>
                 {/* <a href="https://github.com/Lambda-School-Labs/github-commit-analysis-fe" className="image featured"><img src={gitstats} alt="" /></a> */}
                 <header>
-                  <h3>GitStats</h3>
+                  <h3 className="app-title">GitStats</h3>
                 </header>
                 <p className="app-description">A web app designed to provide GitHub users with useful statistics regarding each of their repositories.</p>
                 <div className="row">
