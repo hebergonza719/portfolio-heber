@@ -2513,7 +2513,12 @@ input, select, textarea {
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
+
 		text-align: center;
+		height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 
 		#banner .inner {

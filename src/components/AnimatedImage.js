@@ -32,7 +32,7 @@ const AnimatedImage = ({ source, altText }) => {
     delay: 100,
     // reset: true,
     reverse: state,
-    config: { friction: 19 },
+    config: { friction: 20 },
     // onRest: () => toggle(!state),
   })
 
