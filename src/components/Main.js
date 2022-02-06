@@ -13,6 +13,8 @@ import AnimatedImage from "../components/AnimatedImage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import bootstrap from "bootstrap";
+
 const Main = () => {
   useEffect(() => {
     AOS.init();
